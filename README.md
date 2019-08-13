@@ -22,6 +22,16 @@ Ryerson University security website provides daily update on nearly all the secu
 # Result 
 I programmatically extracted 200 security incidents from 2018-06-29 to 2019-08-03. Following is the result for each section:
 
-### Time of the incident
+### Time of incidents
 I converted the string date column to pandas datetime column, then I converted to 24-hour time format and defined two-hours time buckets for the time. The following is the result of the hours with the highest number of incidents:
+
 ![time](https://user-images.githubusercontent.com/16935815/62913397-df716380-bd59-11e9-88a1-f6ac01305012.png)
+
+### Location of incidents
+I combined all the nearby locations, E.g Kerr Hall South and Kerr Hall West to Kerr Hall, and also duplciate locations such as "Victoria Street and Gould Street area", "Victoria Street and Gould Street", and "Gould Street and Victoria Street". In total, I could narrow down all the locations to 23 distinct locations at Ryerson University. Then I manually geo-located all these locations using Google Maps. The following is the result for the most dangerous locations:
+
+
+![Location1](https://user-images.githubusercontent.com/16935815/62913787-80145300-bd5b-11e9-88a1-2f56ce0e34e9.png)
+
+
+![location2](https://user-images.githubusercontent.com/16935815/62913802-8f939c00-bd5b-11e9-98e3-db650551060d.png)

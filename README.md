@@ -35,3 +35,11 @@ I combined all the nearby locations, E.g Kerr Hall South and Kerr Hall West to K
 
 
 ![location2](https://user-images.githubusercontent.com/16935815/62913802-8f939c00-bd5b-11e9-98e3-db650551060d.png)
+
+
+### Title of incidents
+In this section, we analyzed type of the security incidents. You can get familiar with the definition  and the terminalogy used in security incidents at [Ryerson University Security Incidents](https://www.ryerson.ca/community-safety-security/security-incidents/terminology/) website. I combined the duplicate titles such as "Assault: Suspect Arrested" and "Assault". The following chart depicts the most frequent security incidents.
+
+![title](https://user-images.githubusercontent.com/16935815/62913947-23656800-bd5c-11e9-8595-1eab8360c88c.png)
+
+

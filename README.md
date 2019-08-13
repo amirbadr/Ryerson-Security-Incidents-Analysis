@@ -12,7 +12,7 @@ Ryerson University security website provides daily update on nearly all the secu
 2. In which hour of a day do most of the security incidents happen at Ryerson University?
 3. In which month and season do the majority of the security incidents occur at Ryerson University?
 4. What type of security incident is more common at Ryerson University?
-5. What is the ratio of female suspects over male suspects involved at Ryerson University?
+5. What is the ratio of female suspects over male suspects commiting incidents?
 
 ## In this analysis, we analyzed the detail of incidents in the following steps:
 1. I scraped all the incident titles, times and dates of incidents, and the general location of incidents on 20 incident pages using Folium and Pandas package in Python.<br />

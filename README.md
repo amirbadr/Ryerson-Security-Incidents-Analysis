@@ -19,6 +19,9 @@ Ryerson University security website provides daily update on nearly all the secu
 2. I extracted the web page for all incidents and we extracted the Incident details and Description information in order to further analyze the gender of the suspect. We used Requests, Beautiful Soup, Seaborn, Matplotlib, and Pandas packages.<br />
 3. I further analyzed the incident descriptions and provided the most important words using Term frequency-inverse document frequency and provided the result on Word cloud using Word cloud package .<br />
 
+# Result 
+I programmatically extracted 200 security incidents from 2018-06-29 to 2019-08-03. Following is the result for each section:
+
 ### Time of the incident
 I converted the string date column to pandas datetime column, then I converted to 24-hour time format and defined two-hours time buckets for the time. The following is the result of the hours with the highest number of incidents:
 ![time](https://user-images.githubusercontent.com/16935815/62913397-df716380-bd59-11e9-88a1-f6ac01305012.png)

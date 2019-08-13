@@ -2,10 +2,10 @@
 In this project, I programmatically analyzed Security incident reports at Ryerson University. <br />
 Ryerson University security website provides daily update on nearly all the security incidents which happen near Ryerson University. All Ryerson students, faculty, staff and alumni receive security incident notices directly via their Ryerson email address. You can check the [Ryerson University Security Incidents](https://www.ryerson.ca/community-safety-security/security-incidents/list-of-security-incidents/) website.
 ### Details included in security incidents
-- times and dates of the incident;
-- general location of incidents;
-- details of the suspect; and
-- details on arrests concerning the incident,
+- times and dates of incidents
+- general location of incidents
+- details of suspects
+- details on arrests concerning incidents
 
 ### In this analysis we tries to answer the following questions:
 1. Where are the most dangerous locations at Ryerson University?
@@ -43,3 +43,10 @@ In this section, we analyzed type of the security incidents. You can get familia
 ![title](https://user-images.githubusercontent.com/16935815/62913947-23656800-bd5c-11e9-8595-1eab8360c88c.png)
 
 
+### Month and Season of incidents
+In this section, first I extracted month from the date of incidents, then I converted season name from the date of incident, by calculating which day of the year does the incident happen and converted the day of a year to the season name. The following is the result.
+
+
+![month](https://user-images.githubusercontent.com/16935815/62914136-da61e380-bd5c-11e9-8d78-f29946a0f2ba.png)
+
+![season](https://user-images.githubusercontent.com/16935815/62914137-db931080-bd5c-11e9-8fc9-b0625e8ad166.png)

@@ -7,12 +7,12 @@ Ryerson University security website provides daily update on nearly all the secu
 - details of suspects
 - details on arrests concerning incidents
 
-### In this analysis we tries to answer the following questions:
+### In this analysis I try to answer the following questions:
 1. Where are the most dangerous locations at Ryerson University?
 2. In which hour of a day do most of the security incidents happen at Ryerson University?
-3. In which month and season do majority of the security incidents occur at Ryerson University?
-4. What type of security incident is more common at Ryerson Univeristy?
-5. What is the ratio of female suspects over male suspects involved at Ryerson Univeristy?
+3. In which month and season do the majority of the security incidents occur at Ryerson University?
+4. What type of security incident is more common at Ryerson University?
+5. What is the ratio of female suspects over male suspects involved at Ryerson University?
 
 ## In this analysis, we analyzed the detail of incidents in the following steps:
 1. I scraped all the incident titles, times and dates of incidents, and the general location of incidents on 20 incident pages using Folium and Pandas package in Python.<br />
@@ -23,12 +23,12 @@ Ryerson University security website provides daily update on nearly all the secu
 I programmatically extracted 200 security incidents from 2018-06-29 to 2019-08-03. Following is the result for each section:
 
 ### Time of incidents
-I converted the string date column to pandas datetime column, then I converted to 24-hour time format and defined two-hours time buckets for the time. The following is the result of the hours with the highest number of incidents:
+I converted the string date column to pandas DateTime column, then I converted to 24-hour time format and defined two-hours time buckets for the time. The following is the result of the hours with the highest number of incidents:
 
 ![time](https://user-images.githubusercontent.com/16935815/62913397-df716380-bd59-11e9-88a1-f6ac01305012.png)
 
 ### Location of incidents
-I combined all the nearby locations, E.g Kerr Hall South and Kerr Hall West to Kerr Hall, and also duplciate locations such as "Victoria Street and Gould Street area", "Victoria Street and Gould Street", and "Gould Street and Victoria Street". In total, I could narrow down all the locations to 23 distinct locations at Ryerson University. Then I manually geo-located all these locations using Google Maps. The following is the result for the most dangerous locations:
+I combined all the nearby locations, E.g Kerr Hall South and Kerr Hall West to Kerr Hall, and also duplicate locations such as "Victoria Street and Gould Street area", "Victoria Street and Gould Street", and "Gould Street and Victoria Street". In total, I could narrow down all the locations to 23 distinct locations at Ryerson University. Then I manually geo-located all these locations using Google Maps. The following is the result of the most dangerous locations:
 
 
 ![Location1](https://user-images.githubusercontent.com/16935815/62913787-80145300-bd5b-11e9-88a1-2f56ce0e34e9.png)
@@ -38,9 +38,12 @@ I combined all the nearby locations, E.g Kerr Hall South and Kerr Hall West to K
 
 
 ### Title of incidents
-In this section, we analyzed type of the security incidents. You can get familiar with the definition  and the terminalogy used in security incidents at [Ryerson University Security Incidents](https://www.ryerson.ca/community-safety-security/security-incidents/terminology/) website. I combined the duplicate titles such as "Assault: Suspect Arrested" and "Assault". The following chart depicts the most frequent security incidents.
+In this section, we analyzed the type of security incidents. You can get familiar with the definition and the terminology used in security incidents at [Ryerson University Security Incidents](https://www.ryerson.ca/community-safety-security/security-incidents/terminology/) website. I combined the duplicate titles such as "Assault: Suspect Arrested" and "Assault". The following chart depicts the most frequent security incidents.
 
 ![title](https://user-images.githubusercontent.com/16935815/62913947-23656800-bd5c-11e9-8595-1eab8360c88c.png)
+
+
+
 
 
 ### Month and Season of incidents

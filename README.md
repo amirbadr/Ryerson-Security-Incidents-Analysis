@@ -1,5 +1,5 @@
 # Ryerson-Security-Incidents-Analysis
-In this project, we programmatically analyzed Security incident reports at Ryerson University. <br />
+In this project, I programmatically analyzed Security incident reports at Ryerson University. <br />
 Ryerson University security website provides daily update on nearly all the security incidents which happen near Ryerson University. All Ryerson students, faculty, staff and alumni receive security incident notices directly via their Ryerson email address. You can check the [Ryerson University Security Incidents](https://www.ryerson.ca/community-safety-security/security-incidents/list-of-security-incidents/) website.
 ### Details included in security incidents
 - times and dates of the incident;
@@ -15,8 +15,10 @@ Ryerson University security website provides daily update on nearly all the secu
 5. What is the ratio of female suspects over male suspects involved at Ryerson Univeristy?
 
 ## In this analysis, we analyzed the detail of incidents in the following steps:
-1. We scraped all the incident titles, times and dates of incidents, and the general location of incidents on 20 incident pages using Folium and Pandas package in Python.<br />
-2. We extracted the web page for all incidents and we extracted the Incident details and Description information in order to further analyze the gender of the suspect. We used Requests, Beautiful Soup, Seaborn, Matplotlib, and Pandas packages.<br />
-3. We further analyzed the incident descriptions and provided the most important words using Term frequency-inverse document frequency and provided the result on Word cloud using Word cloud package .<br />
+1. I scraped all the incident titles, times and dates of incidents, and the general location of incidents on 20 incident pages using Folium and Pandas package in Python.<br />
+2. I extracted the web page for all incidents and we extracted the Incident details and Description information in order to further analyze the gender of the suspect. We used Requests, Beautiful Soup, Seaborn, Matplotlib, and Pandas packages.<br />
+3. I further analyzed the incident descriptions and provided the most important words using Term frequency-inverse document frequency and provided the result on Word cloud using Word cloud package .<br />
 
 ### Time of the incident
+I converted the string date column to pandas datetime column, then I converted to 24-hour time format and defined two-hours time buckets for the time. The following is the result of the hours with the highest number of incidents:
+![time](https://user-images.githubusercontent.com/16935815/62913397-df716380-bd59-11e9-88a1-f6ac01305012.png)

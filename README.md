@@ -23,7 +23,7 @@ I converted the string date column to pandas DateTime column, then I converted t
 
 ![time](https://user-images.githubusercontent.com/16935815/62913397-df716380-bd59-11e9-88a1-f6ac01305012.png)
 
-### Location of incidents
+## Location of incidents
 I combined all the nearby locations, E.g Kerr Hall South and Kerr Hall West to Kerr Hall, and also duplicate locations such as "Victoria Street and Gould Street area", "Victoria Street and Gould Street", and "Gould Street and Victoria Street". In total, I could narrow down all the locations to 23 distinct locations at Ryerson University. Then I manually geo-located all these locations using Google Maps. Each location is shown by a set of (Latitude, Longitude) in a red circle. The radius of easccircle shows how dangerous an area is. The larger the radius, more dangerous the area is. The following is the result of the most dangerous locations:
 
 
